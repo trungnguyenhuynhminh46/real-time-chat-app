@@ -1,0 +1,11 @@
+-Dàn layout
+-width, height
++Th1: Kích thước không đổi khi thu nhỏ màn hình
+--> width fixed
+--> mx-auto
++Th2: Kích thước nhỏ lại khi thu nhỏ màn hình
+--> Thẻ bao ngoài display flex, center
+--> thẻ container chứa nội dung bên trong width là %
+-Bo tròn thẻ cha có chứa thẻ con:
+--> border-radius
+--> overflow: hidden

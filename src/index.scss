@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #a7bcff;
+}
+
+/* Hide scrollbar */
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* MessagesContainer */
+.message {
+  @apply w-full flex items-center gap-4 mt-8;
+  .info {
+    @apply flex flex-col items-start;
+    .thumb {
+      @apply w-8 h-8 rounded-[50%];
+    }
+  }
+  .message-content {
+    @apply max-w-[80%] p-2 bg-white rounded-b-lg rounded-r-lg;
+  }
+  &.owner {
+    @apply flex-row-reverse;
+    .message-content {
+      @apply max-w-[80%] p-2 bg-[#8da4f1] text-slate-100 rounded-r-none rounded-b-lg rounded-l-lg;
+    }
+  }
+}
