@@ -19,7 +19,11 @@ body {
 
 /* MessagesContainer */
 .message {
+<<<<<<< HEAD
   @apply w-full flex items-start gap-4 mt-8;
+=======
+  @apply w-full flex items-center gap-4 mt-8;
+>>>>>>> 22787e0eed2501f778f9bd2c7a3115775862a9d2
   .info {
     @apply flex flex-col items-start;
     .thumb {
@@ -27,6 +31,7 @@ body {
     }
   }
   .message-content {
+<<<<<<< HEAD
     @apply grow flex flex-col items-start space-y-2;
     span {
       @apply max-w-[80%] p-2 mb-4 bg-white rounded-b-lg rounded-r-lg;
@@ -34,14 +39,21 @@ body {
     img {
       @apply max-w-[50%];
     }
+=======
+    @apply max-w-[80%] p-2 bg-white rounded-b-lg rounded-r-lg;
+>>>>>>> 22787e0eed2501f778f9bd2c7a3115775862a9d2
   }
   &.owner {
     @apply flex-row-reverse;
     .message-content {
+<<<<<<< HEAD
       @apply items-end;
       span {
         @apply max-w-[80%] p-2 bg-[#8da4f1] text-slate-100 rounded-r-none rounded-b-lg rounded-l-lg;
       }
+=======
+      @apply max-w-[80%] p-2 bg-[#8da4f1] text-slate-100 rounded-r-none rounded-b-lg rounded-l-lg;
+>>>>>>> 22787e0eed2501f778f9bd2c7a3115775862a9d2
     }
   }
 }

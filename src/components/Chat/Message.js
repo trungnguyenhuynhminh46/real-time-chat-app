@@ -11,6 +11,7 @@ const Message = ({ owner }) => {
         />
         <span>Just now</span>
       </div>
+<<<<<<< HEAD
       <div className="message-content">
         <span>This is a message!</span>
         {/* <img
@@ -18,6 +19,9 @@ const Message = ({ owner }) => {
           alt=""
         /> */}
       </div>
+=======
+      <div className="message-content">This is a message!</div>
+>>>>>>> 22787e0eed2501f778f9bd2c7a3115775862a9d2
     </div>
   );
 };
