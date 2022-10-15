@@ -2,15 +2,13 @@ import React from "react";
 // Components
 import ChatItem from "./ChatItem";
 
-const ChatItems = () => {
+const ChatItems = ({ data }) => {
   return (
     <div>
-      <ChatItem></ChatItem>
-      <ChatItem></ChatItem>
-      <ChatItem></ChatItem>
-      <ChatItem></ChatItem>
-      <ChatItem></ChatItem>
-      <ChatItem></ChatItem>
+      {!!data &&
+        data.map((user) => {
+          return <ChatItem key={user.id} user={user}></ChatItem>;
+        })}
     </div>
   );
 };
