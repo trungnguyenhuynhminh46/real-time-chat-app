@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 // Components
 import Nav from "./Nav";
 import MessagesContainer from "./MessagesContainer";

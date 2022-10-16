@@ -16,7 +16,9 @@ const Nav = () => {
           alt=""
           className="mr-2 w-[30px] h-[30px] object-cover rounded-[50%]"
         />
-        <span className="text-slate-200 mr-2">{currentUser.displayName}</span>
+        <span className="text-xs text-slate-200 mr-2">
+          {currentUser.displayName}
+        </span>
         <button
           className="py-1 px-2 bg-[#5d5b8d] hover:opacity-80 text-slate-200 text-xs"
           onClick={() => {
